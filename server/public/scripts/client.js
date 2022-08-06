@@ -9,16 +9,19 @@ function onReady(){
 
 function deleteTask(){
   const id = $(this).data('id');
-  $.ajax({
-    method: 'DELETE',
-    url: `/tasks/${id}`
-  }).then(function(response){
-    console.log(response)
-    getTasks();
-  }).catch(function(err){
-    console.log(err);
-    console.log('error deleting task');
-  })
+  let result = window.confirm('Delete Task Forever?');
+  if (result === true){
+    $.ajax({
+      method: 'DELETE',
+      url: `/tasks/${id}`
+    }).then(function(response){
+      console.log(response)
+      getTasks();
+    }).catch(function(err){
+      console.log(err);
+      console.log('error deleting task');
+    })
+  } else {alert('Task not deleted');}
 }
 
 function updateTask(){
