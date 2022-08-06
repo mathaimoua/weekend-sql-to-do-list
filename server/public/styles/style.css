@@ -39,6 +39,7 @@ body {
 
 .isdoneTrue {
   background-color: rgb(150, 208, 168);
+  font-style:italic;
   text-decoration: line-through;
   width: 90%;
 }
