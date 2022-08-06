@@ -1,9 +1,7 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+To Do List App
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+A simple to-do list app that uses SQL for storing and displaying tasks. Each task has two buttons, one that can update the task to a 'finished' state (changes sql data of the task), the other button deletes the task from the DOM and database.
