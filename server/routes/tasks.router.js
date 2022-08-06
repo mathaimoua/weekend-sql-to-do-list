@@ -7,7 +7,7 @@ const pg = require('pg');
 const Pool = pg.Pool;
 // Pool and new... Constructor
 const pool = new Pool({
-    database: 'to_do_list', // THIS CAN AND WILL CHANGE
+    database: 'weekend-to-do-app', // THIS CAN AND WILL CHANGE
     host: 'localhost',
     port: 5432,
 });
